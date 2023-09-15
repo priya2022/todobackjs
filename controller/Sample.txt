@@ -1,0 +1,41 @@
+// router.post('/newTodo',(req,res)=>{
+//     const newTodo = new Todo({
+//         id: 1,
+//         name: 'Example Todo',
+//         isCompleted: false,
+//       });
+      
+//       // Save the new todo item to the database
+//       newTodo.save()
+//         .then(() => {
+//           console.log('New todo was added successfully');
+//         })
+//         .catch((error) => {
+//           console.error('Error while creating new todo:', error);
+//         });
+// })
+
+
+// router.post('/login', async(req,res)=>{
+//     try{const user = Todo.findOne({email:req.body.email})
+
+//     if(!user){
+//         return res.status(404).json({auth:false,token:"User Not Found"})
+//     }
+
+//     const isPassword = bcrypt.compareSync(req.body.password,user.password)
+    
+//     if(!isPassword){
+//         return res.status(401).json({auth:false, token:'Invalid password'})
+//     }
+
+//     //if Email and Password are correct 
+
+//     const token = jwt.sign({id:user._id}, config.secret, {expiresIn:'24h'})
+//     return res.status(200).json({auth:true, token:token})}
+//     catch(error)
+//     {
+//         console.error("Error is ",error)
+//         res.status(500).json({auth:false, token: "Error While Login "})
+//     }
+// })
